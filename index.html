@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WANTED - Peng Yixuan - Alert</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div id="global-glitch-overlay"></div>
+    <div class="language-selector">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ja">日本語</button>
+        <button class="lang-btn" data-lang="zh">中文</button>
+    </div>
+
+    <div class="container">
+        <div class="wanted-poster">
+            <div class="glitch-text" data-text="TARGET ACQUIRED" data-en="TARGET ACQUIRED" data-ja="ターゲット捕捉" data-zh="目标已捕获">TARGET ACQUIRED</div>
+            <div class="photo-container">
+                <div class="scan-overlay"></div>
+                <img src="criminal.svg" class="wanted-svg" alt="Target: Peng Yixuan">
+                <div class="scan-line"></div>
+            </div>
+            
+            <div class="crimes-3d-container">
+                <div class="crime-tag" data-en="Reality Skewing" data-ja="現実歪曲" data-zh="现实扭曲">Reality Skewing</div>
+                <div class="crime-tag" data-en="Digital Ghosting" data-ja="デジタルゴースティング" data-zh="数字幽灵">Digital Ghosting</div>
+                <div class="crime-tag" data-en="Chronal Interference" data-ja="時間干渉" data-zh="时序干扰">Chronal Interference</div>
+                <div class="crime-tag" data-en="Memetic Warfare" data-ja="ミーム戦争" data-zh="模因战">Memetic Warfare</div>
+                <div class="crime-tag" data-en="Unauthorized Existence" data-ja="未許可存在" data-zh="未授权存在">Unauthorized Existence</div>
+                <div class="crime-tag" data-en="Systemic Echo" data-ja="システムエコー" data-zh="系统回响">Systemic Echo</div>
+                <div class="crime-tag" data-en="Ontological Threat" data-ja="存在論的脅威" data-zh="本体论威胁">Ontological Threat</div>
+                <div class="crime-tag" data-en="Consensus Override" data-ja="コンセンサスオーバーライド" data-zh="共识覆盖">Consensus Override</div>
+            </div>
+            
+            <div class="details">
+                <h2 class="name" data-en="Subject: Peng Yixuan" data-ja="対象: ペン・イーシュエン" data-zh="对象: 彭易萱">Subject: Peng Yixuan</h2>
+                <div class="info">
+                    <p class="year" data-en="Last Sighting: Neo-Kyoto Grid" data-ja="最終目撃: ネオ京都グリッド" data-zh="最后目击: 新京都网格">Last Sighting: Neo-Kyoto Grid</p>
+                    <p class="crime" data-en="Charges: Reality Skewing, Digital Ghosting" data-ja="容疑: 現実歪曲、デジタルゴースティング" data-zh="指控: 现实扭曲、数字幽灵">Charges: Reality Skewing, Digital Ghosting</p>
+                    <p class="reward" data-en="Capture Status: Highly Volatile" data-ja="捕獲状況: 極めて不安定" data-zh="捕获状态: 极不稳定">Capture Status: Highly Volatile</p>
+                </div>
+            </div>
+            <div class="cyber-grid"></div>
+        </div>
+    </div>
+
+    <div id="popup-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <p id="modal-greeting"></p>
+            <p id="modal-question"></p>
+            <div class="modal-options">
+                <button id="option-a"></button>
+                <button id="option-b"></button>
+            </div>
+            <div id="modal-feedback" class="modal-feedback" style="display: none;"></div>
+        </div>
+    </div>
+
+    <div id="hacked-overlay" style="display: none;">
+        <div class="hacked-content">
+            <div class="hacked-text"></div>
+            <div id="explosion-warning" class="hacked-warning" style="display: none;"></div>
+            <div id="countdown-timer" class="hacked-timer" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
